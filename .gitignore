@@ -1,0 +1,4 @@
+config.local.php
+storage/
+uploads/jobs/*
+!uploads/jobs/.gitkeep
