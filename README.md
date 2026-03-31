@@ -1,56 +1,75 @@
 # Job Application Portal
 
-A standalone PHP and MySQL recruitment workflow built for portfolio use. The project demonstrates a realistic hiring flow from public job discovery to admin-side candidate review, status updates, exports, and file handling.
+A standalone PHP and MySQL recruitment workflow built as a portfolio-ready case study. It covers the full hiring loop from public job discovery and application submission to admin-side job management, applicant review, exports, and document handling.
 
-## Highlights
-- Public jobs page with multiple sample openings and a complete application form
-- Admin login and job management dashboard
-- Dedicated job editor for opening content, visibility, and messaging templates
-- Application review page with CSV export and uploaded document preview
-- Optional email actions for confirmation, acceptance, rejection, and application package forwarding
-- Lightweight PHP setup with automatic schema creation and sample data seeding
-- Reusable SQL dataset for demo-ready openings and applicant records
+## Why This Project Stands Out
+- Clear separation between the public application experience and the admin workflow
+- Real CRUD operations for openings, applicants, and workflow status changes
+- File upload handling for resumes and profile photos
+- CSV exports for applicant data
+- Optional email messaging hooks for confirmations and review outcomes
+- Demo-friendly setup with schema auto-creation, seeded sample roles, and a reusable sample dataset
 
 ## Screenshots
-- Public jobs page: `assets/screenshots/public-jobs-home.png`
-- Application form section: `assets/screenshots/public-application-form.png`
-- Admin jobs dashboard: `assets/screenshots/admin-jobs-dashboard.png`
-- Admin application review: `assets/screenshots/admin-application-review.png`
+
+### Public Jobs Page
+![Public jobs page](assets/screenshots/public-jobs-home.png)
+
+### Application Form
+![Application form](assets/screenshots/public-application-form.png)
+
+### Admin Dashboard
+![Admin jobs dashboard](assets/screenshots/admin-jobs-dashboard.png)
+
+### Applicant Review
+![Admin application review](assets/screenshots/admin-application-review.png)
+
+## Feature Overview
+- Public jobs board with multiple sample openings
+- Application form with validation, file uploads, and confirmation flow
+- Admin login and protected management workspace
+- Separate editor page for creating and updating job openings
+- Applicant review page with status actions and CSV export
+- Sample SQL dataset for restoring a clean demo state
+
+## Tech Stack
+- PHP
+- MySQL / MariaDB
+- HTML and inline CSS
+- Font Awesome
 
 ## Project Structure
 - `jobs.php`: public-facing jobs list and application flow
 - `admin/login.php`: admin authentication page
 - `admin/jobs.php`: admin dashboard for jobs and applicant lists
-- `admin/job_opening.php`: dedicated job editor page
+- `admin/job_opening.php`: dedicated editor for job details and templates
 - `admin/job_application.php`: full applicant review page
-- `database/sample_dataset.sql`: optional reset file for clean demo data
-- `includes/jobs_portal.php`: domain logic, schema setup, exports, uploads, and email helpers
+- `database/sample_dataset.sql`: reusable demo dataset
+- `includes/jobs_portal.php`: schema setup, portal logic, exports, uploads, and helpers
 
-## Setup
-1. Copy `config.local.example.php` to `config.local.php` and update the values.
-2. Create the database named in `DB_NAME`.
-3. Place the project in your PHP web root.
-4. Open `jobs.php` for the public page.
-5. Open `admin/login.php` for the admin area.
+## Quick Start
+1. Copy `config.local.example.php` to `config.local.php`.
+2. Update the database and admin credentials in `config.local.php`.
+3. Create the database named in `DB_NAME`.
+4. Place the project inside your PHP web root.
+5. Open `jobs.php` for the public page.
+6. Open `admin/login.php` for the admin workspace.
 
-## Demo Credentials
-- Admin email: set `PORTAL_ADMIN_EMAIL` in `config.local.php`
-- Admin password: set `PORTAL_ADMIN_PASSWORD` in `config.local.php`
-- Optional local demo shortcut: set `PORTAL_DEMO_AUTOLOGIN=1` in `config.local.php`
-
-## Notes
-- The first page load creates the required database tables automatically.
-- Three sample job openings are seeded automatically for demo purposes.
-- Import `database/sample_dataset.sql` if you want the same demo applicants shown in the screenshots.
-- Outgoing mail is optional. Set `MAIL_ENABLED=1` only if local mail delivery is configured.
-- Uploaded files are stored in `uploads/jobs/`.
+## Demo Notes
+- The database tables are created automatically on first load.
+- Three sample job openings are seeded automatically.
+- Import `database/sample_dataset.sql` if you want the same applicant data shown in the screenshots.
+- Set `PORTAL_DEMO_AUTOLOGIN=1` in `config.local.php` for local-only demo capture.
 - `config.local.php` is excluded from version control.
 
-## Portfolio Angle
-This project is useful in a GitHub portfolio because it showcases:
-- CRUD workflow design
-- admin/public route separation
-- file uploads and document delivery
-- status-based workflow management
-- PHP/MySQL data modeling
-- practical product thinking around hiring operations
+## Portfolio Value
+This project demonstrates:
+- PHP and MySQL application structure
+- workflow-oriented admin UX
+- public/admin route separation
+- practical file upload and retrieval handling
+- data export functionality
+- product thinking around recruitment operations
+
+## License
+This project is released under the MIT License. See [LICENSE](LICENSE).
