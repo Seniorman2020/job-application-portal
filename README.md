@@ -1,6 +1,6 @@
 # Job Application Portal
 
-A standalone PHP and MySQL recruitment workflow built as a portfolio-ready case study. It covers the full hiring loop from public job discovery and application submission to admin-side job management, applicant review, exports, and document handling.
+A standalone PHP and MySQL recruitment workflow for managing public job applications and internal applicant review. It covers the full hiring loop from job discovery and application submission to admin-side job management, exports, and document handling.
 
 ## Why This Project Stands Out
 - Clear separation between the public application experience and the admin workflow
@@ -62,8 +62,8 @@ A standalone PHP and MySQL recruitment workflow built as a portfolio-ready case 
 - Set `PORTAL_DEMO_AUTOLOGIN=1` in `config.local.php` for local-only demo capture.
 - `config.local.php` is excluded from version control.
 
-## Portfolio Value
-This project demonstrates:
+## Highlights
+This project includes:
 - PHP and MySQL application structure
 - workflow-oriented admin UX
 - public/admin route separation
@@ -71,5 +71,9 @@ This project demonstrates:
 - data export functionality
 - product thinking around recruitment operations
 
+## Contact
+- Email: `cniorman6@gmail.com`
+- Phone: `08164616531`
+
 ## License
-This project is released under the MIT License. See [LICENSE](LICENSE).
+This project is released under the MIT License by Seniorman Computers. See [LICENSE](LICENSE).
